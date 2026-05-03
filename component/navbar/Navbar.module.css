@@ -1,0 +1,247 @@
+.NavbarcONT{
+
+    width: 280px;
+
+    height: 100vh;
+
+    box-sizing: border-box;
+
+
+}
+
+.OneMore{
+
+    margin: 20px;
+    padding: 20px;
+
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+    height: 95%;
+
+    box-sizing: border-box;
+
+
+
+}
+
+.upperbodyName{
+    display: flex;
+
+
+    align-items: center;
+
+    width: 100%;
+
+
+
+
+
+
+
+}
+
+.lottieScan{
+overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 2;
+    width: 60px
+
+}
+
+.navbarScan{
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+
+
+
+}
+
+.upperbodyNametEXT{
+
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+
+    flex-direction: column;
+}
+
+
+.upperbodyNametEXT h4{
+    margin: 0px;
+    padding: 0px;
+
+    font-weight: 400;
+
+
+}
+
+
+
+.upperbodyNametEXT h6{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+
+
+}
+
+.uperlowerNav{
+    list-style-type: none;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0px;
+
+    gap: 4px;
+
+
+}
+
+.notActive{
+    padding: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid white;
+
+
+}
+
+.active{
+     padding: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+
+
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.none{
+    display: none;
+}
+
+.dot{
+    font-size: 32px;
+    line-height: 0px;
+    padding: 0px;
+    margin: 0px;
+
+}
+.notActive:hover{
+
+    scale: 1.02;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+
+}
+
+.active:hover{
+
+    scale: 1.02;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.lowerMainPart{
+   list-style-type: none;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0px;
+
+    gap: 4px;
+
+
+}
+
+
+
+.lowerMainPart li{
+    padding: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+
+
+}
+
+.lowerMainPart li h6{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.lowerMainPart li:hover{
+    background-color: #f7f7f7;
+
+    
+}
+
+
+
+.lowerScaleChange{
+    transform: rotate(-45deg);
+
+
+    
+
+}
+.littieBounseArrow{
+     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+
+    scale: 0;
+
+
+}
+
+.littieBounseArrow{
+    transition: all 0.3s ease;
+}
+
+.lowerMainPart li:hover{
+
+    .littieBounseArrow{
+        scale: 0.7;
+    }
+
+
+}
