@@ -78,14 +78,6 @@ export default function Stack(){
 
 
             </div>
-            
-epdncdspvn
-
-
-<div>so <p></p></div>
-<div>
-    Put here the value ov bd
-</div>
 
 
 <div>

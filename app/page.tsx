@@ -7,6 +7,7 @@ import About from "@/component/about/About";
 import hello from "@/assets/json/hello.json"
 import greenDot from "@/assets/json/greendot.json"
 import Stack from "@/component/stack/Stack";
+import Contact from "@/component/contact/Contact";
 
 import styles from "./page.module.css"
 
@@ -69,6 +70,7 @@ export default function Home() {
       <About/>
       <Project/>
       <Stack/>
+      <Contact/>
 
 
 

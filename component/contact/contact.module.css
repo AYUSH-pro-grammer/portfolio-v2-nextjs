@@ -1,0 +1,62 @@
+.heading{
+    font-weight: 400;
+}
+
+.whiteBox{
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding-top: 48px;
+
+}
+
+
+.whiteBox p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.button{
+
+        padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    margin-left: 24px;
+
+
+
+}
+
+.button:hover{
+     cursor: pointer;
+    padding: 10px 40px 10px 30px;
+
+    overflow-y: hidden;
+
+}
+
+
+
+.lottieCont{
+    width: 100px;
+
+}
+
+.white{
+    background-color: white;
+
+}

@@ -39,7 +39,7 @@ const About = () => {
 Newton School of Technology – B.Tech CSE
 <br />
 <br />
-2025 – Present
+2026 – Present
 
 
             </p>
