@@ -1,0 +1,88 @@
+.stackHeading{
+    font-weight: 400;
+}
+.stackCont{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 64px;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+
+.asideBox{
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+
+
+}
+
+
+.asideBox:hover{
+    background-color: #f7f7f7;
+    scale: 1.05;
+
+    
+
+}
+
+
+
+
+
+.asideBox h4{
+    font-weight: 400;
+    font-size: 18px;
+
+
+}
+
+.imageCont{
+    padding: 16px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+}
+
+
+.viewmore{
+
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    align-items: center;
+
+}
+
+.viewmore h2{
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+
+.viewmore h2:hover{
+    transform: translateX(-6px);
+    cursor: pointer;
+}
+
+.viewmore{
+    background-color: white;
+
+
+}

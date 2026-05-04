@@ -98,7 +98,10 @@ overflow: hidden;
     color: rgba(0,0,0,0.7);
 
 
+
 }
+
+
 
 .uperlowerNav{
     list-style-type: none;
@@ -120,6 +123,9 @@ overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
     border: 1px solid white;
+    color: black;
+    text-decoration: none;
+
 
 
 }
@@ -130,6 +136,10 @@ overflow: hidden;
     cursor: pointer;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 4px;
+
+        color: black;
+    text-decoration: none;
+    
 
 
     background-color: #f7f7f7;
@@ -147,6 +157,8 @@ overflow: hidden;
     line-height: 0px;
     padding: 0px;
     margin: 0px;
+
+    overflow: hidden;
 
 }
 .notActive:hover{
@@ -232,6 +244,7 @@ overflow: hidden;
 
 
 }
+
 
 .littieBounseArrow{
     transition: all 0.3s ease;

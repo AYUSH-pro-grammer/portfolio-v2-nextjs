@@ -7,6 +7,8 @@ import nav from "@/assets/json/nav.json"
 import arrowNav from "@/assets/json/arrowNav.json"
 import Scan from "@/assets/json/Scan.json"
 
+import Link from "next/link";
+
 
 interface NavbarProps{
     no: number
@@ -72,7 +74,8 @@ export default function Navbar({no}: NavbarProps){
 <br />
 
                 <ul className={styles.uperlowerNav}>
-                    <li onClick={()=>{changeActive(0)}}
+                    <Link href="/" onClick={()=>{changeActive(0)}}
+                    
                     className={active === 0 ? styles.active : styles.notActive}
                         
                         >Home
@@ -86,8 +89,8 @@ export default function Navbar({no}: NavbarProps){
 
                         
                         
-                        </li>
-                    <li onClick={()=>{changeActive(1)}}
+                        </Link>
+                    <Link href="/about" onClick={()=>{changeActive(1)}}
                     className={active === 1 ? styles.active : styles.notActive}
                         >About
                         
@@ -98,8 +101,8 @@ export default function Navbar({no}: NavbarProps){
                             <p className={styles.none}></p>
                         )}
                         
-                        </li>
-                    <li onClick={()=>{changeActive(2)}}
+                        </Link>
+                    <Link href="/project" onClick={()=>{changeActive(2)}}
                     className={active === 2 ? styles.active : styles.notActive}
                         >Project
                         
@@ -110,8 +113,8 @@ export default function Navbar({no}: NavbarProps){
                             <p className={styles.none}></p>
                         )}
                         
-                        </li>
-                    <li onClick={()=>{changeActive(3)}}
+                        </Link>
+                    <Link href="/stack" onClick={()=>{changeActive(3)}}
                     className={active === 3 ? styles.active : styles.notActive}
                         >Stack
                         
@@ -122,8 +125,8 @@ export default function Navbar({no}: NavbarProps){
                             <p className={styles.none}></p>
                         )}
                         
-                        </li>
-                    <li onClick={()=>{changeActive(4)}}
+                        </Link>
+                    <Link href="/contact" onClick={()=>{changeActive(4)}}
                     className={active === 4 ? styles.active : styles.notActive}
                         >Contact
                         
@@ -134,7 +137,7 @@ export default function Navbar({no}: NavbarProps){
                             <p className={styles.none}></p>
                         )}
                         
-                        </li>
+                        </Link>
                 </ul>
 
 

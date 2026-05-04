@@ -1,0 +1,91 @@
+.heading{
+    font-weight: 400;
+}
+
+.projectBG{
+    
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 42px;
+    padding-bottom: 0px;
+    gap: 32px;
+
+
+}
+
+.aside{
+
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.imageName{
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+.imageName:hover{
+    scale: 0.9;
+}
+
+.underProject{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.underProject h4{
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.line{
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: rgba(0,0,0,0.1);
+}
+
+.readmore{
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 32px;
+    background-color: white;
+
+
+
+    box-sizing: border-box;
+}
+
+.h4readmore{
+    font-weight: 300;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+
+}
+
+
+.h4readmore:hover{
+    transform: translateX(-6px);
+}

@@ -1,0 +1,108 @@
+.pageLAYOUT{
+    display: flex;
+    height: 100vh; 
+    overflow-y: hidden;
+
+
+
+
+}
+
+
+
+.childern{
+width: 80%;
+
+overflow-y: scroll;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+
+  
+padding-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+.helloIcon{
+    width: 70px;
+}
+.helloCont{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.upperBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.lottieGreenSection{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.helloCont h2{
+    font-size: 48px;
+    font-weight: 400;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.greendot{
+    width: 50px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.button{
+
+        padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    margin-left: 24px;
+
+
+
+}
+
+.button:hover{
+     cursor: pointer;
+    padding: 10px 40px 10px 30px;
+
+    overflow-y: hidden;
+
+}
+
+
+.basedinIndia{
+  font-size: 16px;
+  color: rgba(0,0,0,0.7);
+}

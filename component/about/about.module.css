@@ -1,0 +1,156 @@
+
+.aboutSection{
+    border: 1px solid black;
+}
+
+.heading{
+    font-weight: 400;
+}
+
+.aboutPageCont{
+
+
+    margin-top: 30px;
+
+
+
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.aboutUsTitle{
+    font-weight: 400;
+
+}
+
+.aboutUsCont{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    background-color: white;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+
+    border-radius: 8px;
+
+    width: calc(78vw);
+
+    padding-top: 40px;
+
+
+}
+
+.part1from{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    border: 1px solid rgba(0,0,0,0.1);
+
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+
+    
+
+}
+.part1fromn{
+    margin-top: 40px;
+
+}
+
+.aboutUsSection{
+    width: 45%;
+    margin-bottom: 50px;
+    
+
+}
+.svgImageABout{
+    width: 30px;
+    margin: 0px 0px 0px 0px
+}
+.aboutMeheadingT{
+    font-weight: 500;
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+.abutMePraatT{
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #515151;
+
+}
+.aboutusDOTcombi{
+    display: flex;
+
+
+}
+.aboutusDot{
+    width: 30px;
+    font-size: 1rem;
+    height: 100%;
+    font-size: 1rem;
+    
+}
+
+@media screen and (max-width: 999px) {
+    .part1from{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutUsCont{
+        width: 90vw;
+    }
+    .aboutUsSection{
+        width: 90%
+    }
+    .aboutPageCont{
+
+    justify-content: center;
+    align-items: center;
+
+}
+    .aboutUsTitle{
+    width: 90%;
+    
+        
+    }
+    
+}
+
+.viewMoreBox{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.viewMoreBoxTtitle{
+    font-weight: 300;
+    padding-right: 30px;
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+
+    color: black;
+}
+
+.viewMoreBoxY{
+    text-decoration: none;
+
+
+}
+.viewMoreBoxTtitle:hover{
+    padding-right: 40px;
+    cursor: pointer;
+}
+.gapgoeshere{
+    margin: 2px
+}
