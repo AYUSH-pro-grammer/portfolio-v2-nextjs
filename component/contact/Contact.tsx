@@ -3,6 +3,7 @@
 import styles from "./contact.module.css"
 import contact from "@/assets/json/contactCat.json"
 import Lottie from "lottie-react"
+import Link from "next/link"
 
 export default function Contact(){
     return (
@@ -16,7 +17,7 @@ export default function Contact(){
                 <p>Do you have a project idea you'd
                     <br />
                     like to discuss?</p>
-                <button className={styles.button}>Contact Me</button>
+                <Link href="/contact" className={styles.button}>Contact Me</Link>
 
             </div> 
 

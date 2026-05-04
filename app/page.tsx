@@ -12,7 +12,7 @@ import Contact from "@/component/contact/Contact";
 import styles from "./page.module.css"
 
 import { useRef } from "react";
-import Project from "@/component/project/Project";
+import ProjectPage from "@/component/project/Project";
 
 export default function Home() {
 
@@ -68,7 +68,7 @@ export default function Home() {
       <p className={styles.basedinIndia}>📍 Based in India</p>
 
       <About/>
-      <Project/>
+      <ProjectPage/>
       <Stack/>
       <Contact/>
 

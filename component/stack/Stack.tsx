@@ -8,6 +8,7 @@ import postgress from "@/public/teachy/sql.svg"
 import pandas from "@/public/teachy/pandas.svg"
 
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Stack(){
     return (
@@ -85,7 +86,7 @@ export default function Stack(){
 </div>
 
                 <div className={styles.viewmore}>
-            <h2>View More</h2>
+            <Link href="/stack">View More</Link>
             </div>
 
 

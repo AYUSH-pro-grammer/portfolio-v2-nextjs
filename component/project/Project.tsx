@@ -43,7 +43,7 @@ export default function Project(){
                 <div className={styles.line}></div>
 
             <div className={styles.readmore}>
-                <h4 className={styles.h4readmore}>View More</h4>
+                <Link href="/project" className={styles.h4readmore}>View More</Link>
             </div>
         </div>
 

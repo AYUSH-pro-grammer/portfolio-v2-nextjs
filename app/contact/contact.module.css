@@ -1,0 +1,224 @@
+.heading{
+    font-weight: 400;
+}
+
+.contactPageOverview{
+    margin-top: 30px;
+
+}
+.contactPageCont{
+    width: 78vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+.contactPageTtittle{
+    font-size: 48px;
+    font-weight: 500;
+    width: 100%;
+
+}
+.gapBeforeMsg{
+    margin: 20px;
+}
+.socialBoxyBox{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 77vw;
+    gap: 20px;
+    overflow-y: hidden;
+
+}
+.contycont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iconsIco{
+    width: 40px;
+    margin-right: 20px;
+}
+.socialLinks{
+    width: 40%;
+    background-color: white;
+
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in;
+
+
+
+
+
+
+}
+.arouwabove{
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+    width: 30px;
+}
+.socialLinks:hover{
+    scale: 1.1;
+
+    .arouwabove{
+        transform: rotate(0deg);
+    }
+}
+@media screen and (max-width: 999px) {
+
+    .contactPageCont{
+        width: 100vw;
+
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    }
+    .socialBoxyBox{
+        width: 90vw;
+
+
+    }
+    .socialLinks{
+        width: 90%
+    }
+}
+
+
+.contactForm{
+    width: 90%;
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 20px
+
+
+
+}
+.paddingLin{
+    margin: 20px;
+}
+
+.upparLimitBox{
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+
+
+
+}
+.typeInputFor{
+    padding: 20px;
+    width: 80%;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 10px;
+
+    margin: 10px
+    
+
+
+}
+.boxForEmailIP{
+    width: 50%;
+
+}
+.lalbelOnC{
+    font-size: 14px;
+
+}
+.lowerLimitMag{
+    width: 90%;
+
+}
+.GetinTouchL{
+    font-size: 24px;
+    font-weight: 400;
+}
+.typeInputForF{
+    margin: 10px
+;
+        padding: 20px;
+    width: 90%;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 8px;
+
+    margin-top: 10px;
+    height: 200px
+
+    
+}
+.buttonHereFOru{
+    width: 90%;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+.buttonHereFOru:hover{
+    scale: 1.01;
+
+}
+.formFotyn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+@media screen and (max-width:600px) {
+
+.upparLimitBox{
+    flex-direction: column;
+}
+.boxForEmailIP{
+
+    width: 80vw;
+}
+.contactPageTtittle{
+    width: 90%;
+
+}
+.typeInputForF{
+    width: 80%;
+}
+}
+
+.arrowAnimintion{
+    width: 50px;
+    
+}
