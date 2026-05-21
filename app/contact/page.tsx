@@ -3,6 +3,7 @@ import styles from './contact.module.css'
 
 import arrowANi from '../../assets/json/newarror.json'
 import { useRef } from 'react';
+import Footer from '@/component/footer/Footer';
 
 export default function ContactPage() {
   return (

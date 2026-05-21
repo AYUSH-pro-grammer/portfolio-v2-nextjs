@@ -147,14 +147,18 @@ export default function Navbar({no}: NavbarProps){
 
 
     <ul className={styles.lowerMainPart}>
-        <li
+
+        <a href="mailto:ayushpro1428@gmail.com">
+
+   <li
         
         
                       onMouseEnter={()=>{lottieref1.current?.play()}}
                       onMouseLeave={()=>{lottieref1.current?.stop()}}
 
 >
-            <h6>Email</h6>
+
+    <h6>Email</h6>
 
             <div className={styles.lowerScaleChange}
             >
@@ -172,7 +176,14 @@ export default function Navbar({no}: NavbarProps){
 
             </div>
         </li>
-        <li
+
+
+        </a>
+
+
+        <a href="https://github.com/AYUSH-pro-grammer">
+
+              <li
         
                       onMouseEnter={()=>{lottieref2.current?.play()}}
                       onMouseLeave={()=>{lottieref2.current?.stop()}}
@@ -200,7 +211,13 @@ export default function Navbar({no}: NavbarProps){
             </div>
 
         </li>
-        <li
+
+
+        </a>
+     
+
+     <a href="https://www.linkedin.com/in/ayushpro1428/">
+             <li
         
                       onMouseEnter={()=>{lottieref3.current?.play()}}
                       onMouseLeave={()=>{lottieref3.current?.stop()}}
@@ -225,7 +242,9 @@ export default function Navbar({no}: NavbarProps){
 
                 
             </div>
-        </li>
+        </li></a>
+  
+
     </ul>
 
 

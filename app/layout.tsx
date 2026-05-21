@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/component/navbar/Navbar";
 import styles from "./page.module.css"
 
+import Footer from "@/component/footer/Footer";
 import "./globals.css";
 
 
@@ -28,6 +29,8 @@ export default function RootLayout({
 
         <div className={styles.childern}>
         {children}
+
+        <Footer/>
 
         </div>
         

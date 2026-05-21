@@ -8,7 +8,7 @@ import hello from "@/assets/json/hello.json"
 import greenDot from "@/assets/json/greendot.json"
 import Stack from "@/component/stack/Stack";
 import Contact from "@/component/contact/Contact";
-
+import Footer from "@/component/footer/Footer";
 import styles from "./page.module.css"
 
 import { useRef } from "react";
@@ -71,6 +71,7 @@ export default function Home() {
       <ProjectPage/>
       <Stack/>
       <Contact/>
+
 
 
 

@@ -86,7 +86,7 @@ export default function Stack(){
 </div>
 
                 <div className={styles.viewmore}>
-            <Link href="/stack">View More</Link>
+            <Link href="/stack" className={styles.viewmoreLink} >View More</Link>
             </div>
 
 

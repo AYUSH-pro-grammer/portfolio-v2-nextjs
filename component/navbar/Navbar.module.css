@@ -28,6 +28,11 @@
 
 }
 
+.lowerMainPart a{
+    color: black;
+    text-decoration: none;
+}
+
 .upperbodyName{
     display: flex;
 

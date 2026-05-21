@@ -1,0 +1,78 @@
+
+.heading{
+
+    font-weight: 400;
+}
+
+.stackCont{
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    
+}
+.underCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px;
+
+}
+.secondTitle{
+    font-weight: 400;
+    margin: 32px 0px;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 18px;
+}
+.asideCont{
+
+
+   
+}
+
+.iconAndName{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+.imageContIcon{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: #f7f7f7;
+    border-radius: 4px;
+
+    width: 96px;
+    height: 96px;
+    box-sizing: border-box;
+}
+
+
+.imageIcon{
+    width: 60px;
+    height: 60px;
+}
+
+.cardDesp{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.line{
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 1px;
+    box-sizing: border-box;
+
+
+}

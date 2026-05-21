@@ -1,0 +1,54 @@
+.footer{
+
+
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+
+
+
+}
+
+.footer h6{
+    font-weight: 100;
+    font-size: 12px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 0;
+
+    color: rgba(0,0,0,0.70);
+
+    line-height: 0;
+}
+
+.footer p{
+    font-weight: 200;
+    font-size: 12px;
+    color: rgba(0,0,0,0.8);
+    line-height: 0;
+    
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    transform: translateX(2px);
+}

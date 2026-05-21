@@ -1,8 +1,12 @@
 "use client"
 import styles from "./project.module.css"
 import Image from "next/image"
-import projecta from "@/public/projectImage/imgA.png"
-import projectb from "@/public/projectImage/imgB.png"
+
+import keyboard from "@/public/projectImage/keyboard.png"
+import devboard from "@/public/projectImage/devboard.png"
+
+
+
 import Link from "next/link"
 
 
@@ -16,10 +20,10 @@ export default function Project(){
             <div className={styles.projectBG}>
                 
                 <aside className={styles.aside}>
-                    <Image className={styles.imageName} src={projecta} alt="Project A"></Image>  
+                    <Image className={styles.imageName} src={keyboard} alt="Project A"></Image>  
                     <div className={styles.underProject}>
-                        <h4>Title One</h4>
-                        <Link href='/'>Link</Link>
+                        <h4>custom Keybaord</h4>
+                        <Link href='https://github.com/AYUSH-pro-grammer/keyboard'>Link</Link>
                     </div>  
 
 
@@ -27,12 +31,12 @@ export default function Project(){
                 </aside>
 
                 <aside className={styles.aside}>
-                    <Image className={styles.imageName} src={projectb} alt="Project B"></Image>
+                    <Image className={styles.imageName} src={devboard} alt="Project B"></Image>
 
 
                     <div className={styles.underProject}>
-                        <h4>Title Two</h4>
-                        <Link href='/'>Link</Link>
+                        <h4>Devboard</h4>
+                        <Link href='https://github.com/AYUSH-pro-grammer/devboard'>Link</Link>
                     </div>  
                 </aside>
 
