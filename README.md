@@ -98,7 +98,11 @@ Most of the content in this portfolio may be updated by editing various project 
 - `assets/` 
 - `public/` 
 
-7 - Currently, there is no deployed version of this application available for user access; however, you may view the application when it becomes deployed to Vercel via the link in the repository. 
+7 - deployed link: 
+
+```
+https://portfolio-v2-nextjs-sandy.vercel.app/
+```
 
 8 - A Brief Note Regarding the Portfolio 
 
