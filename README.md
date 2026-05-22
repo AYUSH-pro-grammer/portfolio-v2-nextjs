@@ -4,6 +4,10 @@ Hello! This is my personal portfolio website that I made using Next.js. The main
 
 As you know, there are a lot of portfolios out there but I decided to create one which will have fluid transitions, responsiveness, and an overall pleasant UX.
 
+![Uploading Screenshot 2026-05-23 at 2.36.45 AM.png…]()
+
+
+
 ## About the Project
 
 Below are some of the features of this portfolio:
