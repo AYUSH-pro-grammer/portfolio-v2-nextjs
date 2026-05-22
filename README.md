@@ -1,37 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# project-v2-nextjs ✨ 
 
-## Getting Started
+Hello!!  This website is my personal portfolio — a beautiful, sleek and interactive platform showcasing what I'm creating, how I am making an impact, and how far I've grown in my craft.
 
-First, run the development server:
+This portfolio uses **Next.js**, styling with an emphasis on having a light weight and smooth feel as well as integrating **Lottie animations** to animate and enliven all aspects of the site, rather than putting together a boring and stiff looking website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What the portfolio provides
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The portfolio is much more than a basic hello world page.  Rather, it’s designed to represent me.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ - simple but elegant layout
+ - smooth transitions between sections via animation
+ - fun use of **Lottie files** for visual interest
+ - simple, easy to understand and use navigation links to move between the various pages of Home, About, Project, Stack and Contact
+ - a personal approach that makes the inventory less like a template and more like a narrative.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What prompted me to create
 
-## Learn More
+The primary purpose of this website is to provide potential clients an opportunity to quickly identify:
 
-To learn more about Next.js, take a look at the following resources:
+ - who am I
+ - what I am doing
+ - what have I learned
+ - how do they reach me
+ 
+The way in which I created this portfolio is intended to provide an enjoyable experience, while also showcasing my journey through my craft. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack of Technologies used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js**
+- **TypeScript**
+- **CSS**
+- **JavaScript**
+- **Lottie animations**
+- **Deployment via GitHub/Vercel**
 
-## Deploy on Vercel
+## Features of the website
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Fully responsive portfolio layout
+- Hero section displaying an introduction
+- About section containing education and work history
+- skill/stack section
+- contact links
+- animated UI elements powered by Lottie files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio-v2-nextjs
+
+Instructions for Use 
+
+1 - Clone the Repository 
+
+Use the following command to create a copy of the repository to your local machine: 
+
+```bash 
+git clone https://github.com/AYUSH-pro-grammer/portfolio-v2-nextjs.git 
+cd portfolio-v2-nextjs 
+``` 
+
+2 - Install All Required Packages 
+
+To install all required packages, navigate to the root directory of this repository in your terminal and run: 
+
+```bash 
+npm install 
+``` 
+
+3 - Run the Development Server 
+
+To run the development server, execute the following command: 
+
+```bash 
+npm run dev 
+``` 
+
+4 - View the Application in Your Web Browser 
+
+Access the application through a web browser by going to the following URL: 
+
+```bash 
+http://localhost:3000 
+``` 
+
+5 - Prepare Application for Deployment (Production) 
+
+To prepare this application for production, you can run the following commands: 
+
+```bash 
+npm run build 
+npm start 
+``` 
+
+6 - Personalization Based on User Needs / Preferences 
+
+Most of the content in this portfolio may be updated by editing various project data files and / or components; however, here are a few good places to start this process: 
+
+- `data.json` 
+- `app/` 
+- `components/` 
+- `assets/` 
+- `public/` 
+
+7 - Currently, there is no deployed version of this application available for user access; however, you may view the application when it becomes deployed to Vercel via the link in the repository. 
+
+8 - A Brief Note Regarding the Portfolio 
+
+This portfolio is intended to be an ongoing project for the purpose of continual improvement and growth for example creating, learning how to build my portfolio will be continuous process until I retire and stop coding. 
+
+Made with a passion for programming, a curiosity to learn something new, and of course, "Fun" Coding 🚀
