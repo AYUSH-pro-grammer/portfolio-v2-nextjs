@@ -1,0 +1,28 @@
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.cards img{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+}
+
+.cards{
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.cards:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 12px;
+
+
+}
+.cards:hover img{
+        scale: 1.05;
+    }
