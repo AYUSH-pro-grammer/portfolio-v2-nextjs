@@ -138,6 +138,23 @@ export default function Navbar({no}: NavbarProps){
                         )}
                         
                         </Link>
+
+
+
+
+
+              <Link href="/blog" onClick={()=>{changeActive(5)}}
+                    className={active === 5 ? styles.active : styles.notActive}
+                        >Blog
+                        
+                        {active === 5 ? (
+                        <div className={styles.dot}>·</div>
+
+                        ):(
+                            <p className={styles.none}></p>
+                        )}
+                        
+                        </Link>
                 </ul>
 
 

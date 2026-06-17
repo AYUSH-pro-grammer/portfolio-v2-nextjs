@@ -1,236 +1,516 @@
-.cont{
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    min-height: 100vh;
-    background: #f8f8f8;
+.cont {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+  background: #f6f6f6;
+  color: #111;
+  font-family: inherit;
 }
 
-/* left side */
-.editPage{
-    padding: 16px;
-    border-right: 1px solid rgba(0,0,0,0.08);
-    background: #fff;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
+.editPage {
+  padding: 16px;
+  border-right: 1px solid #e5e5e5;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-.editPage h2{
-    font-weight: 500;
-    margin-bottom: 16px;
-    font-size: 20px;
+.editPage h2 {
+  font-weight: 600;
+  margin: 0 0 16px;
+  font-size: 18px;
 }
 
-.addButton{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 20px;
+.sidebarButton {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  cursor: pointer;
 }
 
-.addButton button{
-    padding: 12px;
-    background-color: rgba(0,0,0,0.04);
-    border-radius: 10px;
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    font-size: 14px;
+.sidebarButton:hover {
+  background: #f2f2f2;
 }
 
-.addButton button:hover{
-    border-color: rgba(0,0,0,0.3);
-    background: rgba(0,0,0,0.06);
+.addButton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
 }
 
-/* popup */
-.popUpCont{
-    position: fixed;
-    inset: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.35);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    backdrop-filter: blur(2px);
+.addButton button {
+  padding: 11px 10px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: left;
 }
 
-.popUpData{
-    border: 1px solid rgba(0,0,0,0.15);
-    padding: 18px;
-    background-color: white;
-    border-radius: 14px;
-    min-width: 320px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+.addButton button:hover {
+  background: #f2f2f2;
+  border-color: #d3d3d3;
 }
 
-/* right side */
-.otherAside{
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-    max-width: 100%;
-    overflow-x: hidden;
+.popUpCont {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+
 }
 
-.otherAside > button{
-    align-self: flex-start;
-    padding: 10px 16px;
-    border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.12);
-    background: white;
-    cursor: pointer;
-    font-weight: 500;
+.popUpData {
+  width: min(360px, calc(100vw - 32px));
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
 }
 
-.otherAside > button:hover{
-    background: rgba(0,0,0,0.04);
+.popUpData h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-/* paragraph text rendering */
-.paragraph{
-    white-space: pre-wrap;
-    line-height: 1.8;
-    font-size: 16px;
-    margin: 0;
+.popupForm {
+  display: grid;
+  gap: 10px;
 }
 
-.editableParagraph{
-    white-space: pre-wrap;
-    line-height: 1.8;
-    font-size: 16px;
-    margin: 0;
-    outline: none;
-    min-height: 24px;
-    padding: 4px 6px;
-    border-radius: 8px;
+.popupForm label {
+  font-size: 13px;
+  color: #555;
 }
 
-.editableParagraph:focus{
-    background: rgba(0,0,0,0.03);
+.popupForm select,
+.popupForm button,
+.topBar button,
+.inlineForm input,
+.codeLanguage,
+.codeTextarea,
+.quoteTextarea,
+.listInput,
+.youtubeBlock input,
+.dividerEditor input,
+.timelineItem input,
+.timelineItem textarea,
+.faqItem input,
+.faqItem textarea,
+.galleryItemEditor input,
+.tableHeadInput,
+.tableCellInput,
+.bannerEditor input {
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 11px;
+  outline: none;
+  font: inherit;
 }
 
-/* heading */
+.popupForm button {
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.popupForm button:hover {
+  background: #222;
+}
+
+.otherAside {
+  padding: 28px;
+  overflow-x: hidden;
+}
+
+.topBar {
+  margin-bottom: 16px;
+}
+
+.topBar button {
+  width: auto;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #fff;
+  border-color: #d9d9d9;
+}
+
+.topBar button:hover {
+  background: #f4f4f4;
+}
+
+.loading {
+  padding: 30px;
+}
+
+.blockWrap {
+  position: relative;
+  padding: 16px 16px 14px;
+  margin-bottom: 14px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.blockWrap:hover {
+  border-color: #ddd;
+}
+
+.blockActive {
+  border-color: #cfcfcf;
+  background: #fff;
+}
+
+.blockToolbar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+}
+
+.blockWrap:hover .blockToolbar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.blockToolbar button {
+  padding: 6px 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.blockToolbar button:hover {
+  background: #f4f4f4;
+}
+
+.blockToolbar button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.blockContent {
+  padding-right: 140px;
+  min-height: 24px;
+}
+
 .heading,
-.editableHeading{
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0;
-    outline: none;
-    min-height: 28px;
-    padding: 4px 6px;
-    border-radius: 8px;
+.editableHeading {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  outline: none;
 }
 
-.editableHeading:focus{
-    background: rgba(0,0,0,0.03);
+.editableHeading,
+.editableParagraph {
+  padding: 2px 4px;
 }
 
-/* block layout */
-.blockWrap{
-    position: relative;
-    padding: 18px 18px 18px 18px;
-    margin-bottom: 16px;
-    border: 1px solid transparent;
-    border-radius: 16px;
-    background: white;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+.editableHeading:focus,
+.editableParagraph:focus {
+  background: #fafafa;
 }
 
-.blockWrap:hover{
-    border-color: rgba(0,0,0,0.08);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-    background: #fff;
+.paragraph,
+.editableParagraph {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  outline: none;
 }
 
-/* toolbar hidden until hover */
-.blockToolbar{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 8px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-4px);
-    transition: all 0.18s ease;
-    z-index: 2;
+.imageBlock,
+.galleryBlock,
+.codeBlock,
+.quoteBlock,
+.listBlock,
+.youtubeBlock,
+.dividerEditor,
+.timelineBlock,
+.faqBlock,
+.bannerEditor,
+.tableBlock {
+  display: grid;
+  gap: 10px;
 }
 
-.blockWrap:hover .blockToolbar{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+.imageData {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
 }
 
-.blockToolbar button{
-    padding: 6px 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.12);
-    background: white;
-    cursor: pointer;
-    font-size: 13px;
-    transition: 0.15s ease;
+.caption {
+  font-size: 13px;
+  color: #666;
 }
 
-.blockToolbar button:hover{
-    background: rgba(0,0,0,0.04);
+.inlineForm {
+  display: grid;
+  gap: 8px;
 }
 
-.blockToolbar button:disabled{
-    opacity: 0.35;
-    cursor: not-allowed;
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
 }
 
-/* content area */
-.blockContent{
-    min-height: 24px;
-    padding-right: 120px; /* keeps text away from toolbar */
+.galleryCard {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
 }
 
-/* image */
-.imageBlock{
-    display: grid;
-    gap: 10px;
+.galleryImage {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
-.imageData{
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    display: block;
-    object-fit: cover;
+.galleryEditor,
+.galleryItemEditor {
+  display: grid;
+  gap: 8px;
 }
 
-.inlineForm{
-    display: grid;
-    gap: 8px;
-    margin-top: 8px;
+.galleryItemEditor {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
 }
 
-.inlineForm input{
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid rgba(0,0,0,0.12);
-    border-radius: 10px;
-    outline: none;
-    background: white;
+.codePreview {
+  margin: 0;
+  padding: 14px;
+  background: #111;
+  color: #f1f1f1;
+  border-radius: 8px;
+  overflow-x: auto;
 }
 
-.inlineForm input:focus{
-    border-color: rgba(0,0,0,0.35);
+.codeTextarea {
+  min-height: 180px;
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-/* fallback */
-.unsupportedBlock{
-    padding: 14px;
-    border: 1px dashed rgba(0,0,0,0.2);
-    border-radius: 12px;
-    color: #666;
-    background: rgba(0,0,0,0.02);
+.quotePreview {
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.quotePreview p {
+  margin: 0 0 8px;
+  line-height: 1.7;
+}
+
+.quotePreview footer {
+  font-size: 13px;
+  color: #666;
+}
+
+.quoteTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.checklistList {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.listItem span {
+  flex: 1;
+}
+
+.listInput {
+  flex: 1;
+}
+
+.youtubePreview {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.youtubeFrame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
+.divider {
+  margin: 14px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.timelineItem,
+.faqItem {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.timelineItem textarea,
+.faqItem textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.faqItem details {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.faqItem summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bannerPreview {
+  padding: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.bannerPreview h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.bannerPreview p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+
+.bannerPreview button {
+  width: fit-content;
+  padding: 9px 12px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.bannerEditor {
+  display: grid;
+  gap: 8px;
+}
+
+.tableToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tableToolbar button {
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.tableToolbar button:hover {
+  background: #f4f4f4;
+}
+
+.tablePreviewWrap {
+  overflow-x: auto;
+}
+
+.tablePreview {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.tablePreview th,
+.tablePreview td {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tableEditor {
+  display: grid;
+  gap: 8px;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.tableHeadInput,
+.tableCellInput {
+  min-width: 0;
+}
+
+.unsupportedBlock {
+  padding: 12px;
+  border: 1px dashed #d2d2d2;
+  border-radius: 8px;
+  color: #666;
+  background: #fafafa;
 }

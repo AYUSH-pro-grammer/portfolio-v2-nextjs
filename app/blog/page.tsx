@@ -72,10 +72,6 @@ export default function Blog(){
 
 
 
-                      <pre>
-            <code>hello</code>
-          </pre>
-
 
         </div>
         </div>
