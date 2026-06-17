@@ -1,0 +1,236 @@
+.cont{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+/* left side */
+.editPage{
+    padding: 16px;
+    border-right: 1px solid rgba(0,0,0,0.08);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.editPage h2{
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.addButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.addButton button{
+    padding: 12px;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addButton button:hover{
+    border-color: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.06);
+}
+
+/* popup */
+.popUpCont{
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.popUpData{
+    border: 1px solid rgba(0,0,0,0.15);
+    padding: 18px;
+    background-color: white;
+    border-radius: 14px;
+    min-width: 320px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* right side */
+.otherAside{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.otherAside > button{
+    align-self: flex-start;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.otherAside > button:hover{
+    background: rgba(0,0,0,0.04);
+}
+
+/* paragraph text rendering */
+.paragraph{
+    white-space: pre-wrap;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0;
+}
+
+.editableParagraph{
+    white-space: pre-wrap;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0;
+    outline: none;
+    min-height: 24px;
+    padding: 4px 6px;
+    border-radius: 8px;
+}
+
+.editableParagraph:focus{
+    background: rgba(0,0,0,0.03);
+}
+
+/* heading */
+.heading,
+.editableHeading{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    outline: none;
+    min-height: 28px;
+    padding: 4px 6px;
+    border-radius: 8px;
+}
+
+.editableHeading:focus{
+    background: rgba(0,0,0,0.03);
+}
+
+/* block layout */
+.blockWrap{
+    position: relative;
+    padding: 18px 18px 18px 18px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: white;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.blockWrap:hover{
+    border-color: rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    background: #fff;
+}
+
+/* toolbar hidden until hover */
+.blockToolbar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: all 0.18s ease;
+    z-index: 2;
+}
+
+.blockWrap:hover .blockToolbar{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.blockToolbar button{
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.15s ease;
+}
+
+.blockToolbar button:hover{
+    background: rgba(0,0,0,0.04);
+}
+
+.blockToolbar button:disabled{
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* content area */
+.blockContent{
+    min-height: 24px;
+    padding-right: 120px; /* keeps text away from toolbar */
+}
+
+/* image */
+.imageBlock{
+    display: grid;
+    gap: 10px;
+}
+
+.imageData{
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+    object-fit: cover;
+}
+
+.inlineForm{
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.inlineForm input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 10px;
+    outline: none;
+    background: white;
+}
+
+.inlineForm input:focus{
+    border-color: rgba(0,0,0,0.35);
+}
+
+/* fallback */
+.unsupportedBlock{
+    padding: 14px;
+    border: 1px dashed rgba(0,0,0,0.2);
+    border-radius: 12px;
+    color: #666;
+    background: rgba(0,0,0,0.02);
+}

@@ -1,0 +1,31 @@
+.cont{
+    width: 100%;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+
+.upperBoxCont{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.form{
+    border: 1px solid black;
+    padding: 32px;
+
+    background-color: white;
+}
