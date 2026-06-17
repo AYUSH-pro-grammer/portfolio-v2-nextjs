@@ -18,7 +18,7 @@ export default function Blog(){
     useEffect(() => {
 
         const fetchData = async() => {
-            const backendUrl = "http://127.0.0.1:8000/blog/get"
+            const backendUrl = "https://portfolio-backend-woad-seven.vercel.app/blog/get"
 
             try{
                 const resp = await fetch(backendUrl,{

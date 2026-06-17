@@ -16,7 +16,7 @@ export default function BlogDetail() {
         const fetchData = async () => {
             try {
                 const resp = await fetch(
-                    `http://127.0.0.1:8000/blog/details/${id}`,
+                    `https://portfolio-backend-woad-seven.vercel.app/blog/details/${id}`,
                     {
                         method: "GET",
                         headers: {

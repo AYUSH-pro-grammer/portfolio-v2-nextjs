@@ -32,7 +32,7 @@ export default function Heading({data}: any){
             return
         }
 
-        const url = `http://127.0.0.1:8000/blog/details/update/heading/${data.id}`
+        const url = `https://portfolio-backend-woad-seven.vercel.app/blog/details/update/heading/${data.id}`
         
         try{
 
@@ -71,7 +71,7 @@ export default function Heading({data}: any){
     const [deletePop, setDeletePop] = useState(false)
 
     const deleteHeading = async() => {
-        const url = `http://127.0.0.1:8000/blog/details/delete/${data.id}`
+        const url = `https://portfolio-backend-woad-seven.vercel.app/blog/details/delete/${data.id}`
 
 
         try{

@@ -14,7 +14,7 @@ export default function Paragraph({data}: any){
             return 
         }
 
-    const url = `http://127.0.0.1:8000/blog/details/update/paragraph/${data.id}`
+    const url = `https://portfolio-backend-woad-seven.vercel.app/blog/details/update/paragraph/${data.id}`
 
     try {
         const resp = await fetch(url, {
@@ -45,7 +45,7 @@ export default function Paragraph({data}: any){
 
     const [deletePop, setDeletePop] = useState(false)
     const deletePara = async() => {
-        const url = `http://127.0.0.1:8000/blog/details/delete/${data.id}`
+        const url = `https://portfolio-backend-woad-seven.vercel.app/blog/details/delete/${data.id}`
 
         try{
             const resp = await fetch(url, {

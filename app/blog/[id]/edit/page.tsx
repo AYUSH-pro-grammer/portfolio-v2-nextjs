@@ -91,7 +91,7 @@ export default function EditPage() {
 
       setLoading(true)
       try {
-        const resp = await fetch(`http://127.0.0.1:8000/blog/details/${blogId}`, {
+        const resp = await fetch(`https://portfolio-backend-woad-seven.vercel.app/blog/details/${blogId}`, {
           headers: { accept: 'application/json' },
         })
 
@@ -603,7 +603,7 @@ export default function EditPage() {
 
     try {
       const resp = await fetch(
-        `http://127.0.0.1:8000/blog/details/add/${blogId}`,
+        `https://portfolio-backend-woad-seven.vercel.app/blog/details/add/${blogId}`,
         {
           method: 'POST',
           headers: {
@@ -643,7 +643,7 @@ export default function EditPage() {
       }
 
       const resp = await fetch(
-        `http://127.0.0.1:8000/blog/details/replace/${blogId}`,
+        `https://portfolio-backend-woad-seven.vercel.app/blog/details/replace/${blogId}`,
         {
           method: 'POST',
           headers: {
@@ -1399,7 +1399,7 @@ export default function EditPage() {
         ) : null}
 
 
-        
+
       <aside className={styles.editPage}>
         <h2>Edit Page</h2>
 
