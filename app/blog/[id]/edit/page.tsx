@@ -1306,7 +1306,7 @@ export default function EditPage() {
 
               {rows.map((row: string[], rowIndex: number) => (
                 <div key={rowIndex} className={styles.tableRow}>
-                  {headers.map((_, colIndex: number) => (
+                  {headers.map((_: string, colIndex: number) => (
                     <input
                       key={colIndex}
                       type="text"

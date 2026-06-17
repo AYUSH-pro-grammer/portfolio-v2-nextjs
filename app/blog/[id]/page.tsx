@@ -63,7 +63,7 @@ export default function BlogDetail() {
 
     return (
         <main className={styles.container}>
-            {data.map((item) => {
+            {data.map((item :any) => {
                 switch (item.type) {
                     case "heading":
                         return (

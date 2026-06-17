@@ -57,7 +57,7 @@ export default function Blog(){
 
 
             {
-                data.map((item) => {
+                data.map((item: any) => {
                     return(
 
                         <div className={styles.cards} onClick={()=>{redirect(item.id)}}>
