@@ -20,12 +20,29 @@ import robodog from "@/public/projectImage/robodog.png"
 import splitkeyboard from "@/public/projectImage/splitkeyboard.png"
 import flightcontroller from "@/public/projectImage/flightcontroller.png"
 
+import imgA from "@/public/projectImage/imgA.png"
+import imgB from "@/public/projectImage/imgB.png"
+
+
 import hackpad from "@/public/projectImage/hackpad.png"     
 import { useState } from "react"
 
 
 
+
 export default function ProjectPage(){
+
+    const filters = [
+    "all",
+    "featured",
+    "completed",
+    "in-progress",
+    "graveyard",
+    "hardware",
+    "software",
+]
+
+
 
 
     const [active, setActive] = useState(1)
@@ -34,106 +51,156 @@ export default function ProjectPage(){
         setActive(index)
     }
 
-    const completed_data = [
-        {
-            "title" : "Custom Keybaord",
-            "github_url": "https://github.com/AYUSH-pro-grammer/keyboard",
-            "image":keyboard,
-             "demo": "",
-            "guide": ""
 
+
+    const data = [
+
+        {
+            title: "Custom Keyboard",
+            github_url: "https://github.com/AYUSH-pro-grammer/keyboard",
+            image: keyboard,
+            demo: "",
+            guide: "",
+            tags: ["completed", "hardware", "featured"]
         },
 
         {
-            "title": "Devboard",
-            "github_url": "https://github.com/AYUSH-pro-grammer/devboard",
-            "image": devboard,
-             "demo": "",
-            "guide": "",
+            title: "Devboard",
+            github_url: "https://github.com/AYUSH-pro-grammer/devboard",
+            image: devboard,
+            demo: "",
+            guide: "",
+            tags: ["in-progress", "hardware", "featured"]
+        },
+
+        {
+            title: "Drone",
+            github_url: "",
+            image: drone,
+            demo: "",
+            guide: "",
+            tags: ["completed", "hardware", "featured"]
         },
         {
-            "title": "Drone",
-            "github_url": "",
-            "image": drone,
-             "demo": "",
-            "guide": "",
-
+            title: "Hackpad",
+            github_url: "https://github.com/AYUSH-pro-grammer/hackpad",
+            image: hackpad,
+            demo: "",
+            guide:"",
+            tags: ["completed", "hardware"]
         },
-        {
 
-            "title" : "Hackpad",
-            "github_url": "",
-            "image": hackpad,
-             "demo": "",
-            "guide": "",
-        }
+    {
+        title: "Split Keyboard",
+        github_url: "https://github.com/AYUSH-pro-grammer/split-keyboard",
+        image: splitkeyboard,
+        demo: "",
+        guide: "",
+        tags: ["in-progress", "hardware"]
+    },
+
+    {
+        title: "Blinky Board",
+        github_url: "https://github.com/AYUSH-pro-grammer/led-timer",
+        image: blinkyboard,
+        demo: "",
+        guide: "",
+        tags: ["completed", "hardware"]
+    },
+
+    {
+        title: "Hermes",
+        github_url: "https://github.com/AYUSH-pro-grammer/hermes",
+        image: hermes,
+        demo: "",
+        guide: "",
+        tags: ["in-progress", "hardware"]
+
+    },
+
+    {
+
+        title: "Flight Controller",
+        github_url: "https://github.com/AYUSH-pro-grammer/esp32-flight-controller",
+        image: flightcontroller,
+        demo: "",
+        guide: "",
+        tags: ["completed", "hardware"]
+
+    },
+
+    {
+        title: "Keycaps",
+        github_url: "https://github.com/AYUSH-pro-grammer/keycaps",
+        image: keycaps,
+        demo: "",
+        guide: "",
+        tags: ["in-progress", "hardware"]
+    
+    },
+    {
+        title: "Pathfinder",
+        github_url: "https://github.com/AYUSH-pro-grammer/pathFinder",
+        image: pathfinder,
+        demo: "",
+        guide: "",
+        tags: ["in-progress", "hardware"],
+
+
+    },
+    {
+        title: "RC camera car",
+        github_url: "https://github.com/AYUSH-pro-grammer/rc-camera-car",
+        image: rccar,
+        demo: "",
+        guide: "",
+        tags: ["graveyard", "hardware"]
+    },
+
+    {
+
+        title: "Robo Dog",
+        github_url: "https://github.com/AYUSH-pro-grammer/robo-dog-esp32",
+        image: robodog,
+        demo: "",
+        guide: "",
+        tags: ["completed", "hardware"]
+    },
+
+    {
+        title: "Advocate Manju Prajapati",
+        github_url: "https://github.com/AYUSH-pro-grammer/advocate-manju-prajapati-v2",
+        image: imgA,
+        demo: "https://advocatemanjuprajapati.com",
+        guide: "",
+        tags: ["completed", "software", "featured"]
+    }
+    ,
+
+    {
+        title: "AM Divorce Lawyer",
+        github_url: "https://github.com/AYUSH-pro-grammer/Divorce-Law-Firm",
+        image: imgB,
+        demo: "www.amdivorcelawyer.online",
+        guide: "",
+        tags: ["completed", "software", "featured"]
+    
+    }
 
     ]
 
+    const renderData = data.filter((items) => {
 
-
-    const pending_data = [
-        {
-            "title" : "Split Keyboard",
-            "github_url": "https://github.com/AYUSH-pro-grammer/split-keyboard",
-            "image":splitkeyboard,
-            "demo": "",
-            "guide": ""
-
-        },
-
-        {
-
-            "title": "blinky timer board",
-            "github_url": "https://github.com/AYUSH-pro-grammer/led-timer",
-            "image": blinkyboard,
-            "demo": "",
-            "guide": "",
-            
-        },
-
-        {
-            "title": "Hermes",
-            "github_url": "https://github.com/AYUSH-pro-grammer/hermes",
-            "image": hermes,
-            "demo": "",
-            "guide": "",
-        },
-        {
-            "title": "Flight Controller",
-            "github_url": "https://github.com/AYUSH-pro-grammer/esp32-flight-controller",
-            "image": flightcontroller,
-        },
-        {
-            "title": "Keycaps", 
-            "github_url": "https://github.com/AYUSH-pro-grammer/keycaps",
-            "image": keycaps,
-            "demo": "",
-            "guide": "",
-        }, {
-
-
-            "title": "Path Finder",
-            "github_url": "https://github.com/AYUSH-pro-grammer/pathFinder",
-            "image" : pathfinder,
-            "demo": "",
-            "guide": "",
-        },
-        {
-            "title": "RC Car",
-            "github_url": "https://github.com/AYUSH-pro-grammer/rc-camera-car",
-            "image": rccar,
-            "demo": "",
-            "guide": "",
-        },
-        {
-            "title": "Robo Dog",
-            "github_url": "https://github.com/AYUSH-pro-grammer/robo-dog-esp32",
-            "image": robodog,
-            "demo": "",
-            "guide": "",
+        if ( items.tags.includes(filters[active]) || active === 0) {
+            return true
+        } else {
+            return false
         }
-    ]
+
+    
+    }
+
+)
 
 
 
@@ -149,31 +216,35 @@ export default function ProjectPage(){
                 <h1>Project</h1>
 
                 <div className={styles.filter} >
-                    <button className={active === 1 ? styles.selected: styles.filterbutton}
 
-                        onClick={()=> changeActive(1)}
-                    >Completed</button>
+                    {
+                        filters.map((item, index) => {
+                            return (
 
 
-                    <button className={active === 2 ? styles.selected: styles.filterbutton}
+                                <button className={active === index ? styles.selected: styles.filterbutton}
 
-                    onClick = {() => changeActive(2)}
+                        onClick={()=> changeActive(index)}
+                    >{item}</button>
+
+
+                            )
+                        })
+                    }
                     
 
-                    >In Progress</button>
+
                 </div>
 
                 <br/>
 
-{
-    active === 1 ? (
 
 
                 <div className={styles.whitebox}>
 
                     {
 
-                        completed_data.map((item: any) => {
+                        renderData.map((item: any) => {
                             return (
                                 <div className={styles.box}> 
                                     <Image className={styles.boximage}  src={item.image} alt="project image"></Image>
@@ -218,60 +289,7 @@ export default function ProjectPage(){
                     }
 
                 </div>
-    ):(
-
-   <div className={styles.whitebox}>
-
-                    {
-
-                        pending_data.map((item: any) => {
-                            return (
-                                <div className={styles.box}> 
-                                    <Image className={styles.boximage}  src={item.image} alt="project image"></Image>
-                                    <h4>{item.title}</h4>
-
-
-                                    <div className={styles.linkBox}>
-
-                                    {
-
-                                        item.github_url ? (
-                                            <a href={item.github_url}>Github</a>
-                                        ):(
-                                            <h6>Comming Soon
-                                            </h6>
-                                        )
-                                    }
-
-
-                                    {
-
-                                        item.demo ? (
-                                            <a href={item.demo}>Demo</a>
-                                        ): ""
-                                    }
-
-                                    {
-                                        item.guide ? (
-                                            <a href={item.guide}>Guide</a>
-                                        ): ""
-                                    }
-
-
-
-                                    </div>
-
-                                   
-                                </div>
-                            )
-                        })
-
-                    }
-
-                </div>
-    )
-}
-
+   
 
             </aside>
 

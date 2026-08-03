@@ -10,6 +10,8 @@ border-radius: 12px;
 
 }
 
+
+
 .box{
     width: 100%;
     display: grid;
@@ -56,6 +58,8 @@ border-radius: 12px;
     display:flex;
     align-items: center;
     justify-content: end;
+
+    gap: 12px;
 }
 
 .box h6{
